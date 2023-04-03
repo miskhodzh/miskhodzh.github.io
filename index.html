@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="static/css/index.css">
+
+	<link rel="stylesheet" href="static/css/form.css">
+	<link rel="stylesheet" href="static/css/stories.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+	<title>Абазадобро</title>
+</head>
+<body>
+	<header>
+		<div class="logo_img">
+			<img src="static/img/logo.jpg" id="logo_img" onclick="stories('stories_block')">
+			<a href="#" class="logoimg_edit_button" onclick="shcl('logo_img_form')"><img src="static/img/edit_button.svg"></a>
+		</div>
+		<div class="logo_text">
+			<div id="logo_text">АБАЗАДОБРО</div>
+			<a href="#" class="logotext_edit_button" onclick="shcl('logo_text_form')"><img src="static/img/edit_button.svg"></a>
+		</div>
+	</header>
+
+
+	<div class="form" id="form1" style="display: none;">
+  		<img src="static/img/exit_button.svg" onclick="shcl('form1')">
+  		<form class="edit_main_button">
+    		<label for="name">Текст на кнопке:</label>
+    		<input type="text" id="name" name="name"><br><br>
+    		<label for="url">Ссылка:</label>
+    		<input type="text" id="url" name="url"><br><br>
+    		<input type="submit" value="Сохранить" id="form_save_button">
+  		</form>
+	</div>
+	<div class="form" id="form2" style="display: none;">
+  		<img src="static/img/exit_button.svg" onclick="shcl('form2')">
+  		<form class="edit_main_button">
+    		<label for="name">Текст на кнопке:</label>
+    		<input type="text" id="name" name="name"><br><br>
+    		<label for="url">Ссылка:</label>
+    		<input type="text" id="url" name="url"><br><br>
+    		<input type="submit" value="Сохранить" id="form_save_button">
+  		</form>
+	</div>
+	<div class="form" id="info_form" style="display: none;">
+      <img src="static/img/exit_button.svg" onclick="shcl('info_form')">
+      <form class="edit_info_text">
+        <label for="name">О нас:</label><br><br>
+        <textarea name="name" id="info_text_edit" cols="65" rows="10"></textarea><br><br>
+        <input type="submit" value="Сохранить" id="form_save_button">
+      </form>
+  	</div>
+  	<div class="form" id="logo_text_form" style="display: none;">
+  		<img src="static/img/exit_button.svg" onclick="shcl('logo_text_form')">
+  		<form class="edit_main_button">
+    		<label for="name">Текст логотипа:</label><br><br>
+    		<input type="text" id="name" name="name"><br><br>
+    		<input type="submit" value="Сохранить" id="form_save_button">
+  		</form>
+	</div>
+	<div class="form" id="logo_img_form" style="display: none;">
+  		<img src="static/img/exit_button.svg" onclick="shcl('logo_img_form')">
+  		<form class="edit_main_button">
+    		<label for="name">Выберите картинку:</label><br><br>
+    		<input type="file" id="name" name="name" accept="image/jpeg, image/png"><br><br>
+    		<input type="submit" value="Сохранить" id="form_save_button">
+  		</form>
+	</div>
+
+	<main>
+	<div class="stories" id="stories_block" style="display: none;">
+		<div class="time_subline"></div>
+		<div class="time_line"></div>
+		<img src="static/img/stories/close_stories.svg" id="close_stories" onclick="stories('stories_block')">
+		<a href="static/img/stories/stories.jpg" download target="_blank"><img src="static/img/stories/download_stories.svg" id="download_stories"></a>
+		<img src="static/img/stories/stories.jpg" id="stories">
+	</div>
+		<div class="main_buttons">
+			<div class="main_button">
+				<a href="#" id="main_button">СТАТЬ ВОЛОНТЕРОМ</a>
+				<a class="logotext_edit_button" onclick="shcl('form1')"><img src="static/img/edit_button.svg"></a>
+
+			</div>
+			<div class="main_button">
+				<a href="links.html" id="main_button">ЗАКРЕПЛЕННОЕ</a> 
+				<a href="#" class="logotext_edit_button" onclick="shcl('form2')"><img src="static/img/edit_button.svg"></a>
+			</div>
+		</div>
+
+		<div class="info">
+			<h2>
+				О нас
+			</h2>
+			<p>
+				В рамках спецификации современных стандартов, сторонники тоталитаризма в науке призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+			</p>
+			<a href="#" class="infotext_edit_button" onclick="shcl('info_form')"><img src="static/img/edit_button.svg"></a>
+		</div>
+	</main>
+	<script src='static/js/index.js'></script>
+	<script src='static/js/stories.js'></script>
+</body>
+</html>

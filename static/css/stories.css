@@ -1,0 +1,43 @@
+.stories{
+	position: absolute;
+	top: 0;
+}
+#stories{
+	width: 100%;
+}
+#close_stories{
+	position: absolute;
+	right: 10px;
+}
+#download_stories{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.time_subline{
+	position: absolute;
+	top: 120px;
+
+	display: block;
+
+	width: 100%;
+	height: 10px;
+	background-color: #D9D9D9;
+	opacity: 0.5;
+}
+.time_line{
+	position: absolute;
+	top: 120px;
+	display: block;
+	width: 0%;
+	height: 10px;
+	background-color: #D9D9D9;
+	opacity: 0.7;
+	animation: stretch 15s linear forwards;
+}
+@keyframes stretch {
+  to {
+    width: 100%; /* конечная ширина блока */
+  }
+}

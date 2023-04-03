@@ -1,0 +1,21 @@
+.carousel_slides{
+  width: 810px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#active{
+  display: flex;
+  flex: 0 0 100%;
+  padding: 10px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  font-family: Ubuntu;
+  font-size: 40px;
+  text-align: justify;
+}
+
+.carousel_slide{
+  display: none;
+}

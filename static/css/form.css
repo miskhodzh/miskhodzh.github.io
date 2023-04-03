@@ -1,0 +1,58 @@
+.form{
+	position: absolute;
+	flex-direction: column;
+	border-radius: 30px;
+	border: 2px solid black;
+	
+	font-family: 'Ubuntu';
+	
+	background-color: #949494;
+
+	padding-top: 130px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.edit_main_button label{
+	font-size: 36px;
+}
+.form img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#form_save_button{
+	margin-top: 50px;
+	display: block;
+	font-size: 24px;
+	width: 200px;
+	height: 55px;
+	background-color: #15B842;
+	border-radius: 30px;
+	color: white;
+	border: none;
+}
+#name{
+	width: 800px;
+	height: 50px;
+	font-size: 24px;
+	font-family: 'Ubuntu';
+	border-radius: 5px;
+}
+#url{
+	width: 800px;
+	height: 50px;
+	font-size: 24px;
+	font-family: monospace;
+	border-radius: 5px;
+}
+
+.edit_info_text label{
+	font-family: 'Ubuntu';
+	font-size: 36px;
+}
+.edit_info_text textarea{
+	font-size: 24px;
+}
